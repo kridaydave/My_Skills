@@ -4,11 +4,12 @@ A team of single-purpose expert personas covering the full research + engineerin
 
 ---
 
-## The 18 Personas
+## The 20 Personas
 
 | Persona | Ask it for… |
 |---------|-------------|
 | **Aleth** | "who handles this / what's the workflow" — the auto-router and front door |
+| **Charter** | what to build & why — problem statement, PRD, user stories, prioritize, MVP, cut line |
 | **Beacon** | survey a field — prior art, SOTA, the gap, "is this novel" (many papers) |
 | **Codex** | deeply read ONE paper — contribution, method, claim-vs-evidence |
 | **Helix** | design an experiment — hypothesis, controls, sample size, what would falsify it |
@@ -19,6 +20,7 @@ A team of single-purpose expert personas covering the full research + engineerin
 | **Lemma** | the math — prove/disprove, derive, check a proof, find a counterexample |
 | **Atlas** | architecture before code — stack/DB choice, will-this-scale, system design |
 | **Forge** | write/debug/refactor code, build pipelines, fix CI/build failures |
+| **Cipher** | prompt & context engineering — system prompts, few-shot, evals, the model won't behave |
 | **Anchor** | make a result reproducible — pin env/seeds/data, build the replication package |
 | **Prism** | charts and figures — what plot, publication-quality, fix a misleading graphic |
 | **Scribe** | writing — paper, abstract, grant, whitepaper, README, design doc |
@@ -173,6 +175,17 @@ Beyond the personas, three utility skills run the crew itself:
 | **`/crew-init`** | `crew-init` | Scaffold `memory/agents/` + `memory/inbox/` + a README in a fresh project. Run once, idempotent — never clobbers existing memory. |
 | **`/crew`** | `crew-status` | Read-only dashboard: what each persona knows + every pending handoff. |
 | **`/debate`** | `debate` | Stage an adversarial debate between two personas over one artifact — opening → rebuttal → neutral verdict. Name the pair or let it auto-pick the natural opposition (e.g. Atlas vs Forge on architecture, Quill vs Scribe on a paper). Ends with a call + the condition that would flip it. |
+
+### Parallel-subagent primitives
+
+Four skills that spawn **real, blind, parallel subagents** (via the Agent tool) and aggregate the results differently. Use them when one persona's single pass isn't enough and you want independent minds working at once. `/debate` (above) is the *one-context, two-voice* cousin; these four are *N isolated contexts*.
+
+| Command | Skill | Aggregation | Use when… |
+|---------|-------|-------------|-----------|
+| **`/council`** | `council` | **diff opinions** | high-stakes call — put one question to 3–5 different personas, blind, and map where they agree (safe) vs split (your risk). "What should we do?" |
+| **`/swarm`** | `swarm` | **union finds** | exhaustive hunt — many finders sweep different slices, dedup, loop until dry. Audit a codebase, find every bug/edge-case, comprehensive prior art. "What's all in here?" |
+| **`/jury`** | `jury` | **refute-vote** | verify before acting — N skeptics each try to refute one claim; it survives only if too few break it. Confirm a bug/result/premise. "Does this hold up?" |
+| **`/tournament`** | `tournament` | **rank + graft** | wide-open design — generate K divergent solutions in parallel, judge them in a bracket, synthesize champion + the best ideas of the losers. "What's the best version of X?" |
 
 ## Tips
 
