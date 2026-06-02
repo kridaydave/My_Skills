@@ -25,7 +25,7 @@ Built on the **Agent tool**. Two distinct phases: a generation fan-out, then jud
 
 ### Phase 2 — Judge (bracket, parallel pairs, blind)
 
-4. **Define the rubric BEFORE judging.** State 3–5 weighted criteria for *this* problem (e.g. correctness 40% / simplicity 30% / extensibility 30%). Picking criteria after seeing candidates rigs the outcome.
+4. **Define the rubric BEFORE judging.** State 3–5 weighted criteria for *this* problem (e.g. correctness 40% / simplicity 30% / extensibility 30%). **Criteria weights must sum to 100% exactly** — partial weights (50% + 30% + 10%) make pairwise comparison ambiguous and the judge will be inconsistent across pairs. Round or rebalance until the total is 100% before you start. Picking criteria after seeing candidates rigs the outcome.
 5. **Head-to-head, parallel.** Each bracket round pairs candidates; spawn **one judge subagent per pair in a single batch**, each blind to other pairs, each returning a winner + scored reasons against the fixed rubric. Winners advance; emit the next round's judge batch. Pairwise (A-vs-B) beats scoring-in-isolation — comparison surfaces differences a lone score blurs.
 6. **Odd counts / byes.** Odd field → one bye to the next round; never invent a phantom opponent. ~4–8 candidates is the sweet spot (1–3 judging rounds).
 7. **Optional semifinal cross-check.** For high stakes, have the final-round judge see both finalists' full text (not just the verdict) to catch a bracket artifact where a strong candidate lost early to an even stronger one.

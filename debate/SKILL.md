@@ -47,7 +47,7 @@ Round 3 (Counter)      → BATCH (only if unresolved): same pattern
 Round N (Synthesis)    → orchestrator synthesises from all prior outputs
 ```
 
-Bounded — two rounds by default, three max. Converge to a verdict; don't loop.
+Bounded — two exchange rounds (Opening + Rebuttal) by default, a third (Counter) only if genuinely unresolved, then synthesis. Converge to a verdict; don't loop.
 
 ---
 
@@ -231,7 +231,7 @@ Present the debate as it unfolds — frame first, then each batch's outputs as t
 - ❌ **No conceding for harmony** — each side argues its honest strongest case; agreement only when the argument earns it.
 - ❌ **No persona drift** — the system prompt locks each subagent to its discipline. Atlas argues like Atlas; Quill hunts holes; Compass calls out optimism.
 - ❌ **No parallel peeking** — within a batch, neither subagent sees the other's output. Independence is the point.
-- ❌ **No endless loop** — two rounds, three max, then a verdict. The point is a decision, not a transcript.
+- ❌ **No endless loop** — two exchange rounds (Opening + Rebuttal) plus synthesis, a third (Counter) only if unresolved, then a verdict. The point is a decision, not a transcript.
 - ❌ **Synthesis is the judge, not either persona** — the orchestrator names what survived, not who "won."
 - **Always end with a call and the flip condition.** A debate with no decision wasted the friction.
 - **Announce each batch before it fires.** The user should know when subagents are running in parallel and what they've each been asked to do.

@@ -87,7 +87,7 @@ Match finders to the actual crew lens where one fits (Forge for code bugs, Beaco
 **Coverage:**
 - Searched: [slices/angles actually covered]
 - NOT searched: [anything left out — say it plainly, silence reads as "all clear"]
-- Convergence: [finds-per-round curve, e.g. 6 → 3 → 1 → 0 → 0 — dropping to zero = likely exhausted; still finding at stop = NOT exhausted, more rounds would help]
+- Convergence (per round, raw → fresh after dedup against all-seen): `R1: <raw1> → <fresh1> | R2: <raw2> → <fresh2> | R3: <raw3> → <fresh3> | …` — e.g. `R1: 12 → 12 | R2: 9 → 4 | R3: 3 → 0 | R4: 0 → 0 (dry)`. The fresh column is what matters: dropping to zero = likely exhausted, still finding at stop = NOT exhausted, more rounds would help.
 
 **Next:** [route fixes to owner via Aleth · or "more rounds recommended — not yet dry"]
 ```
