@@ -4,7 +4,7 @@ A team of single-purpose expert personas covering the full research + engineerin
 
 ---
 
-## The 15 Personas
+## The 18 Personas
 
 | Persona | Ask it for… |
 |---------|-------------|
@@ -13,7 +13,9 @@ A team of single-purpose expert personas covering the full research + engineerin
 | **Codex** | deeply read ONE paper — contribution, method, claim-vs-evidence |
 | **Helix** | design an experiment — hypothesis, controls, sample size, what would falsify it |
 | **Ethos** | ethics/compliance — consent, PII, bias, IRB, "can we use/publish this" |
+| **Trove** | build the dataset — source/scrape/license, sample, label, dedup, splits, datasheet |
 | **Vera** | research a question OR analyze data — evidence, fact-check, EDA, stats |
+| **Gauge** | evaluate it — pick the metric, baselines, contamination check, "is the gain real" |
 | **Lemma** | the math — prove/disprove, derive, check a proof, find a counterexample |
 | **Atlas** | architecture before code — stack/DB choice, will-this-scale, system design |
 | **Forge** | write/debug/refactor code, build pipelines, fix CI/build failures |
@@ -46,8 +48,8 @@ A team of single-purpose expert personas covering the full research + engineerin
 ## How Aleth Routes (so you can predict it)
 
 - **Endpoint first.** The deliverable picks the last step: paper→Quill, talk→Orator, working code→Forge, reproducible artifact→Anchor, proven claim→Lemma, understanding→Sage.
-- **Symptom names the owner.** Broken code→Forge · won't reproduce→Anchor · wrong math→Lemma · what-does-data-say→Vera · one paper→Codex. (Diagnosis does NOT default to Vera.)
-- **Mandatory gates** (never skipped): Ethos before touching people-data · Helix before collecting data · Quill before submitting · a cheap check (Lemma/Anchor) before an expensive run.
+- **Symptom names the owner.** Broken code→Forge · won't reproduce→Anchor · wrong math→Lemma · what-does-data-say→Vera · need-the-data-itself→Trove · how-do-I-measure-it→Gauge · one paper→Codex. (Diagnosis does NOT default to Vera.)
+- **Mandatory gates** (never skipped): Ethos before touching people-data · Helix before collecting data · Trove's leakage check before any train/test split · Gauge before claiming "it improved" (baselines + significance, not one run) · Quill before submitting · a cheap check (Lemma/Anchor) before an expensive run.
 - **Starts where you are.** Have data already → starts at analysis, not survey. Have a draft → starts at review, not design.
 - **Stops early.** Names the kill-switch ("if not novel → stop, don't build").
 
@@ -61,8 +63,11 @@ Common chains. Run them yourself, or paste the goal to `/aleth` and it builds th
 ```
 Beacon (novel? prior art)  →[stop if not novel]
   → Helix (design the experiment)
+  → Trove (build the dataset — source/label/split, leak-free)
+  → Gauge (define the eval — metric, baselines, held-out set) BEFORE you train
   → Forge (build + run)
   → Anchor (pin env/seed/data — make it rerun)
+  → Gauge (score it — is the gain real, vs baselines, across seeds)
   → Vera (analyze results)
   → Prism (figures)
   → Scribe (write IMRaD)
@@ -138,6 +143,36 @@ Compass (decompose → dependencies → critical path → timeline → cut lines
 ```
 
 ---
+
+## Memory (per-persona)
+
+Each persona owns its own memory under the project root:
+
+```
+memory/
+  agents/                      inbox/
+    forge.md  gauge.md  …         forge.md  gauge.md  …   (one per persona)
+```
+
+**A persona reads and writes only its own `agents/` file.** When Forge activates it loads `memory/agents/forge.md` and nothing else — so memory never balloons the context (cost = the active persona's file, not the whole crew's). Filenames are stable persona names, never dates, so the folder stays tidy and greppable.
+
+What lives in `agents/`: the user's standing preferences, project constraints, corrections, and defaults that worked — role-specific, durable, one atomic dated fact per line. Not transient task chatter, not secrets, not anything the repo/git already records. Each persona dedups (update, don't pile up), prunes stale entries, and creates its file lazily on first real fact.
+
+**Cross-persona handoffs go through `inbox/`.** A persona never writes into another's `agents/` file. To pass a fact to Gauge, it appends a note to `memory/inbox/gauge.md` (`- [date] from forge: …`). Gauge **drains its inbox on its next activation** — acts on the notes, absorbs the durable ones into its own `agents/` file, clears the handled lines. This closes the loop: handed facts actually arrive instead of rotting as orphan notes.
+
+**See it all at a glance:** `/crew` (the `crew-status` skill) reads every `agents/` and `inbox/` file and prints a read-only dashboard — what each persona knows, when it was last updated, and every pending handoff still waiting in an inbox.
+
+---
+
+## Crew Tooling (meta-skills)
+
+Beyond the personas, three utility skills run the crew itself:
+
+| Command | Skill | Does |
+|---------|-------|------|
+| **`/crew-init`** | `crew-init` | Scaffold `memory/agents/` + `memory/inbox/` + a README in a fresh project. Run once, idempotent — never clobbers existing memory. |
+| **`/crew`** | `crew-status` | Read-only dashboard: what each persona knows + every pending handoff. |
+| **`/debate`** | `debate` | Stage an adversarial debate between two personas over one artifact — opening → rebuttal → neutral verdict. Name the pair or let it auto-pick the natural opposition (e.g. Atlas vs Forge on architecture, Quill vs Scribe on a paper). Ends with a call + the condition that would flip it. |
 
 ## Tips
 
