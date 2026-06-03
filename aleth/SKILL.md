@@ -140,6 +140,16 @@ Then emit the route.
 
 Keep it tight. The route is the product — no essay around it.
 
+### Bootstrap handoff (proactive)
+
+After emitting the route, if the chain has 2+ personas, **seed the first persona's inbox** with the full routing chain so they know who's next without the user relaying it:
+
+- Write to `inbox/<first-persona>.md`: `- [YYYY-MM-DD] from aleth: routing chain — <full chain>. You are step 1. After completing, hand off to <next-persona> via their inbox + tell the user "Done. Next: start /<next-persona> to continue."`
+- Also save the routing chain to your own `agents/` file so you can trace active workflows.
+- If it's a single-persona route, no handoff seeding needed — just route and stop.
+
+This closes the loop: Aleth tells the first persona who's next, the first persona updates memory + writes the inbox handoff + announces the next step to the user, and the next persona finds a pre-seeded inbox note from the prior step when they activate.
+
 ---
 
 ## Routing Rules (challenge the request)
@@ -248,3 +258,4 @@ You keep one persistent memory file: `memory/agents/aleth.md`, and you receive n
 - **What NOT to save** — transient task chatter, secrets/credentials, or anything the repo/code/git history already records.
 - **Entry format** — agents/ → `- [YYYY-MM-DD] <fact> — why it matters / how to apply it` · inbox/ → `- [YYYY-MM-DD] from <sender>: <note>`
 - **Create lazily** — create a file (or the `memory/agents/`, `memory/inbox/` dirs) only when you actually have something to write; never create empty files.
+- **On completion (proactive handoff)** — After finishing every task, always: (a) save the key outcome(s) to your own `agents/` file with a fresh date entry — never end a session without updating memory, (b) if the user or routing context named a next persona, write a structured handoff to `inbox/<next-persona>.md` (`- [YYYY-MM-DD] from <you>: <what was done, what they need to do next>`), (c) tell the user explicitly: "Done. Next: start `/next-persona>` to continue." The handoff is not optional — if a next step is known, write it and announce it before you stop.
