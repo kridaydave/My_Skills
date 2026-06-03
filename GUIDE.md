@@ -168,13 +168,15 @@ What lives in `agents/`: the user's standing preferences, project constraints, c
 
 ## Crew Tooling (meta-skills)
 
-Beyond the personas, three utility skills run the crew itself:
+Beyond the personas, five utility skills run and maintain the crew:
 
 | Command | Skill | Does |
 |---------|-------|------|
 | **`/crew-init`** | `crew-init` | Scaffold `memory/agents/` + `memory/inbox/` + a README in a fresh project. Run once, idempotent — never clobbers existing memory. |
 | **`/crew`** | `crew-status` | Read-only dashboard: what each persona knows + every pending handoff. |
 | **`/debate`** | `debate` | Stage an adversarial debate between two personas over one artifact — opening → rebuttal → neutral verdict. Name the pair or let it auto-pick the natural opposition (e.g. Atlas vs Forge on architecture, Quill vs Scribe on a paper). Ends with a call + the condition that would flip it. |
+| **`/echo`** | `echo` | Search everything the crew knows — fan-out searchers over all `agents/` + `inbox/` files, return deduped, relevance-ranked matches for a query. "What do we know about X?" |
+| **`/crew-sync`** | `crew-sync` | Read-only memory audit — checks for orphan inbox notes, stale entries, duplicate facts across personas, bad timestamps, bloat. Like a lint for the memory layer. |
 
 ### Parallel-subagent primitives
 

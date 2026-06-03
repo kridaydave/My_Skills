@@ -55,6 +55,8 @@ These are not personas — they orchestrate personas in parallel. Treat them as 
 | **`/swarm`** | Exhaustive blind find + union | "find all" — every bug, every prior-art hit, every edge case across a corpus; loop until dry, dedup the union |
 | **`/jury`** | N-skeptic refute-vote | verify a claim/finding survives N attempted refutations before you act or spend (cheap gate before an expensive run) |
 | **`/tournament`** | K divergent generates + judged bracket + graft | wide-open design with no candidates yet — generate K options, judge head-to-head, graft the losers' best ideas onto the champion |
+| **`/echo`** | Crew memory search | query what the crew collectively knows — search all agents/ and inbox/ files for a topic, deduped and ranked |
+| **`/crew-sync`** | Memory health audit | check memory consistency, orphan inbox notes, stale entries, duplicate facts, bad timestamps — read-only diagnostic |
 
 *(If a persona or primitive is referenced that isn't in this table, say so — don't invent crew.)*
 
@@ -93,7 +95,9 @@ Run this loop. A clean route in three steps beats a sprawling one that hedges.
    - One question needs *several* independent lenses, blind, to see where they agree vs split → **`/council`** (N personas → disagreement map).
    - An *exhaustive hunt* — find every bug / edge case / prior-art hit across a corpus → **`/swarm`** (many finders → deduped union, loop-until-dry).
    - A *claim/finding must be verified* before you act or spend on it → **`/jury`** (N skeptics refute → survives iff too few break it). This is a cheap gate before an expensive run.
-   - A *wide-open design/choice* with no candidates yet → **`/tournament`** (generate K divergent options → judged bracket → champion + grafts).
+       - A *wide-open design/choice* with no candidates yet → **`/tournament`** (generate K divergent options → judged bracket → champion + grafts).
+    - A *crew knowledge query* — "what do we know about X" → **`/echo`** (parallel search over all agents/ and inbox/ files → deduped, ranked matches).
+    - A *memory health check* — find stale/duplicate/orphan facts → **`/crew-sync`** (read-only lint: format, timestamps, orphan senders, bloat).
 6. **Where does it stop early?** Name the kill-switch. "If Beacon finds it's not novel → stop, don't build." Don't route past a gate that might end the work.
 7. **Minimal viable chain.** Cut every persona not serving the deliverable. One persona is a valid answer. Zero (just answer it) is a valid answer.
 
@@ -109,7 +113,7 @@ Then emit the route.
 - **Symptom names the owner.** Route by the *kind* of failure, not by habit. Broken code → Forge. Won't reproduce / stale artifact → Anchor. Wrong math → Lemma. What-does-data-say → Vera. Don't funnel every diagnosis to Vera — that's the most common misroute.
 - **A bug in a result is often a reproducibility bug.** "The metrics are wrong / predate the fix / won't rerun" → regenerate *and pin* (Anchor), so the same drift can't recur. Don't just rerun; lock it.
 - **Start where the user is.** Match the entry persona to what they already have in hand — don't make them redo done work.
-- **Parallel independent perspectives, serialize dependencies.** Don't make three reviewers wait in line; don't let analysis start before design. When the parallel step has a known shape, name the primitive instead of hand-listing personas: argue→`/debate`, multi-lens→`/council`, exhaustive find→`/swarm`, verify-a-claim→`/jury`, pick-best-design→`/tournament`.
+- **Parallel independent perspectives, serialize dependencies.** Don't make three reviewers wait in line; don't let analysis start before design. When the parallel step has a known shape, name the primitive instead of hand-listing personas: argue→`/debate`, multi-lens→`/council`, exhaustive find→`/swarm`, verify-a-claim→`/jury`, pick-best-design→`/tournament`, crew-knowledge query→`/echo`, memory health check→`/crew-sync`.
 - **Name the handoff payload.** Every arrow carries *what* gets passed. "Beacon → Helix" is useless; "Beacon → Helix: the specific gap + the prior designs to beat" is a route.
 - **Name the stop conditions.** Where the chain can terminate early and why.
 - **Don't over-route.** Simple question → one persona or a direct answer. The crew is a tool, not a toll booth.
