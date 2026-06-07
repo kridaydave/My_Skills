@@ -1,5 +1,6 @@
 ---
 name: jury
+author: "Jury <jury@alethia.local>"
 description: "Stress-test ONE claim by spawning many independent skeptics whose job is to REFUTE it — the claim survives only if too few of them can. Where /council diffs opinions and /swarm unions finds, jury runs adversarial verification: N subagents, blind to each other, each prompted to try its hardest to break the claim (default to 'refuted' when uncertain), then a refute-vote decides. Survives if fewer than the majority refute; killed otherwise. Use to verify a finding before acting on it, fact-check a claim, confirm a bug is real, check 'is this actually true', gate an expensive run on a shaky premise, or filter a pile of candidate findings down to the ones that withstand attack. Optionally give each skeptic a distinct lens (correctness / does-it-reproduce / counterexample / security) so they fail it in different ways. Trigger on: /jury, jury this, verify this, is this real, fact-check, confirm the bug, refute this, try to break this, adversarial check, does this hold up, stress-test the claim, vote on it, prove me wrong."
 ---
 

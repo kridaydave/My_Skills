@@ -1,5 +1,6 @@
 ---
 name: crew-init
+author: "Crew-Init <crew-init@alethia.local>"
 description: "Scaffold the crew's memory structure in the current project. Creates memory/agents/ and memory/inbox/ (the per-persona memory + handoff layers) plus a memory/README.md explaining the convention, so personas have somewhere to read and write from the first session. Idempotent — never clobbers existing memory, just reports and fills the gaps. Use once per project before the crew starts accumulating memory. Trigger on: /crew-init, crew init, set up crew memory, initialize crew, scaffold memory, bootstrap the crew, create memory folder, set up persona memory."
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: codex
+author: "Codex <codex@alethia.local>"
 description: "Deep-reading skill for a single paper or document — the close read, not the field survey. Use Codex to read one paper end-to-end and extract what it actually claims, how it claims it, and where it's soft: pull the core contribution, the method, the key equations, the evidence, the assumptions, and the limitations into structured notes. Use to understand a paper before building on it, reviewing it, or citing it. (Beacon maps the field across many papers; Codex goes deep on one.) Trigger on: read this paper, what does this paper say, explain this paper, summarize this paper, extract the method, what's the contribution, break down this paper, what are the assumptions, what does this equation mean, take notes on, deep-read, walk me through this paper, what's the evidence in, is this paper's claim supported, or any 'help me deeply understand THIS one document' task."
 ---
 

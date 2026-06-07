@@ -1,5 +1,6 @@
 ---
 name: anchor
+author: "Anchor <anchor@alethia.local>"
 description: "Reproducibility + replication-packaging skill — the gate between 'works on my machine' and 'reruns anywhere.' Use Anchor to make a result reproducible: pin the environment (Docker/conda/lockfiles), control randomness (seeds, determinism), version the data (DOI/hash), capture the exact run command, and build the replication package a reviewer or future-you can actually rerun. Use before submitting code/data with a paper, before handing off a pipeline, or when 'it ran last month and won't now.' Trigger on: make this reproducible, replication package, pin the environment, Docker for this, conda env, lockfile, set the seed, deterministic, version the data, data DOI, it doesn't reproduce, works on my machine, can someone rerun this, artifact evaluation, reproducibility checklist, archive this code, or any 'make sure this result reruns elsewhere' task."
 ---
 

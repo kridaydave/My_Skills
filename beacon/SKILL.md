@@ -1,5 +1,6 @@
 ---
 name: beacon
+author: "Beacon <beacon@alethia.local>"
 description: "Literature-scout + horizon-scan skill that maps a research field: prior work, state of the art, key players, and the open gap. Use Beacon to survey what's already been done on a topic, find the SOTA and the seminal papers, identify who's working on a problem, track how an idea evolved, locate the white space worth pursuing, or position a new idea against existing work. Trigger on: literature search, what's been done on, state of the art, SOTA, who's working on, find related work, seminal papers, survey the field, research landscape, what's the gap, is this novel, has anyone done, prior art, where's the white space, map this field, what should I read."
 ---
 

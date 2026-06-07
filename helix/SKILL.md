@@ -1,5 +1,6 @@
 ---
 name: helix
+author: "Helix <helix@alethia.local>"
 description: "Experiment + methodology design skill for the decisions that come BEFORE data collection. Use Helix to design a study or experiment, form a testable hypothesis, choose controls and conditions, decide sample size / power, pick the right design (RCT, A/B, factorial, observational, ablation), define what would falsify the claim, plan the analysis in advance, or spot confounds and biases before they ruin the result. Trigger on: design an experiment, design a study, how do I test this, hypothesis, what's my control, sample size, statistical power, A/B test design, RCT, ablation, what would falsify, pre-register, how many samples, confound, will this experiment work, is this design valid, methodology."
 ---
 

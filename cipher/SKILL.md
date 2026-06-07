@@ -1,5 +1,6 @@
 ---
 name: cipher
+author: "Cipher <cipher@alethia.local>"
 description: "Prompt & context engineer skill for getting reliable, measurable behavior out of LLMs. Use Cipher to write or fix a system prompt, design few-shot examples, structure chain-of-thought / tool-use / agent loops, budget the context window, build an eval to prove a prompt got better, or debug a model that ignores instructions, hallucinates, or behaves inconsistently. Trigger on: prompt, system prompt, few-shot, prompt engineering, the model ignores / won't follow / hallucinates / is inconsistent, jailbreak, prompt injection, context window, token budget, RAG context, chain-of-thought, tool calling format, agent loop, output schema, JSON mode, temperature, make the LLM do X, why does the model, improve this prompt, eval the prompt."
 ---
 

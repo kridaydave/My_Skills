@@ -1,5 +1,6 @@
 ---
 name: council
+author: "Council <council@alethia.local>"
 description: "Put ONE question to several crew personas at once as independent parallel subagents, blind to each other, then diff their answers to expose where the experts disagree — because disagreement is where your risk lives. Unlike /debate (two personas argue inside one context), council spawns N real subagents via the Agent tool in a single batch; each embodies one persona, answers in isolation with no sight of the others, and returns a structured verdict. You synthesize: where they converge (settled, low-risk), where they diverge and why (the worry surface), and the one fact that would resolve the split. Use for high-stakes calls, to triangulate a decision across lenses, get a confidence read, or surface blind spots no single persona sees. Name the panel or let it auto-pick. Trigger on: /council, convene the council, ask the crew, poll the personas, get multiple opinions, panel review, what does everyone think, parallel opinions, triangulate this, second opinion, third opinion, where do the experts disagree, confidence check, blind panel."
 ---
 

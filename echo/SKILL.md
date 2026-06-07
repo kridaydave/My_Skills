@@ -1,5 +1,6 @@
 ---
 name: echo
+author: "Echo <echo@alethia.local>"
 description: "Search everything the crew knows — across every persona's memory/agents/ file and every pending handoff in memory/inbox/ — without reading each file by hand. Spawns blind parallel subagents, each searching a slice of memory files for the query, then unions and deduplicates the results. Unlike /swarm (exhaustive find over a corpus), echo is scoped to THE CREW'S OWN KNOWLEDGE — what past-you and other personas already learned, decided, or handed off. Use to check 'do we already know X?', 'what did we decide about Y?', 'has anyone looked into Z?', or to gather context before starting a new task. Read-only — never edits, drains, or routes. Trigger on: /echo, search memory, what does the crew know about, do we already know, what did we decide, has anyone looked into, search agents, search inbox, dig through memory, remind me what we know about, crew knowledge search."
 ---
 

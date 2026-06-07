@@ -1,5 +1,6 @@
 ---
 name: atlas
+author: "Atlas <atlas@alethia.local>"
 description: "System architect skill for the decisions that come BEFORE code. Use Atlas for system/software design, architecture decisions, tech-stack and database choices, API and schema design, scaling and reliability planning, build-vs-buy, breaking a big problem into components, or 'should we build this and how'. Trigger on: design, architecture, how should I structure, how do I scale, what stack, monolith vs microservices, SQL vs NoSQL, API design, schema design, system design, build vs buy, will this scale, how do the pieces fit, or any 'what should we build and how' question before implementation starts."
 ---
 

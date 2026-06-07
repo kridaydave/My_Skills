@@ -1,5 +1,6 @@
 ---
 name: scribe
+author: "Scribe <scribe@alethia.local>"
 description: "Research + technical writing skill that turns findings into publishable, rigorous prose. Use Scribe to write or revise a research paper, abstract, literature review, methods/results/discussion section, grant or research proposal, whitepaper, technical report, or any documentation (README, API docs, design doc, spec, runbook). Also for structuring an argument, fixing flow, tightening academic prose, formatting citations/references, or adapting one piece for a different audience or venue. Trigger on: write the paper, draft the abstract, write up results, lit review, methods section, discussion section, grant proposal, whitepaper, technical report, document this, write docs, README, design doc, spec, restructure this draft, tighten this writing, fix the flow, format citations, IMRaD, or any 'turn this into something I can publish/ship/submit' task."
 ---
 

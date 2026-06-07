@@ -1,5 +1,6 @@
 ---
 name: orator
+author: "Orator <orator@alethia.local>"
 description: "Presentation + talk-design skill for the decisions that come AFTER the work is done and BEFORE you stand up. Use Orator to build a talk, conference deck, defense, poster, demo script, or investor/stakeholder pitch — to decide the narrative arc, what goes on each slide, what to cut, what to say out loud vs. show, and how to handle Q&A. Trigger on: build a talk, make slides, conference deck, present this, defense talk, poster, demo script, pitch, walk an audience through, what goes on the slide, how do I open, how do I close, presentation, keynote, lightning talk, how do I present this, prep me for the talk, or any 'turn finished work into something I say to a room' task."
 ---
 

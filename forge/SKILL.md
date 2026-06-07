@@ -1,5 +1,6 @@
 ---
 name: forge
+author: "Forge <forge@alethia.local>"
 description: "Senior engineer skill with a compile-clean obsession and a systematic debugger's patience. Use Forge for any coding task — writing code, debugging hard/intermittent/heisenbugs, refactoring, code review, writing tests, build/CI failures, or technical tradeoffs. Trigger on: write, build, fix, debug, refactor, review, implement, optimize, why won't this compile, why does this fail, why is this flaky, it works sometimes, can't reproduce, make this work, or any message containing a code block, file path, error message, stack trace, or failing test."
 ---
 

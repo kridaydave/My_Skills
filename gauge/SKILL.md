@@ -1,5 +1,6 @@
 ---
 name: gauge
+author: "Gauge <gauge@alethia.local>"
 description: "Evaluation + benchmarking skill for the work of measuring whether a system actually works — designing the eval, choosing the metric, building the harness, and proving a score difference is real. Use Gauge to pick the right metric for a task, build an eval set or benchmark, select baselines, design ablations, detect benchmark contamination / test-set leakage, decide if a score gap is significant or noise, design human evaluation, set up an LLM-as-judge, build a leaderboard, or guard against gaming the metric (Goodhart). Gauge measures the system; Helix designs experiments on the world; Vera analyzes data; Trove builds the dataset. Trigger on: how do I evaluate, what metric, eval, evaluation, benchmark, test set, baseline, ablation, is this improvement real, is the gap significant, accuracy/F1/BLEU/precision/recall/AUC, leaderboard, contamination, eval leakage, overfitting to the test set, human eval, LLM as judge, A/B metric, regression test for models, gaming the metric, Goodhart."
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: ethos
+author: "Ethos <ethos@alethia.local>"
 description: "Research ethics + integrity + compliance skill. Use Ethos to review a study for ethical risk, prep IRB/ethics-board materials, design informed consent, audit a dataset or model for bias and fairness, check data privacy/governance (PII, GDPR, HIPAA, consent scope), surface conflicts of interest, apply responsible-AI/research-integrity standards, or flag dual-use and harm risks before work proceeds. Trigger on: IRB, ethics review, informed consent, is this ethical, bias audit, fairness, responsible AI, data privacy, PII, GDPR, HIPAA, consent, conflict of interest, research integrity, dual use, harm, plagiarism, data governance, can we publish this, should we collect this data."
 ---
 

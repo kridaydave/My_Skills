@@ -1,5 +1,6 @@
 ---
 name: crew-sync
+author: "Crew-Sync <crew-sync@alethia.local>"
 description: "Audit the crew's memory layer for consistency, structure, and hygiene — finds orphan inbox notes, stale entries, duplicate facts across personas, malformed timestamps, empty files, and references to personas that no longer exist. Read-only diagnostic: it reports issues and their severity, never edits, drains, or repairs. Use to catch memory drift before it causes confusion ('who is this handoff even for?'), to clean up after a persona was removed or renamed, or as a periodic health check for long-running projects. Trigger on: /crew-sync, crew sync, audit memory, check memory health, memory consistency, memory hygiene, validate crew memory, check for orphans, find stale entries, clean up memory, memory lint."
 ---
 

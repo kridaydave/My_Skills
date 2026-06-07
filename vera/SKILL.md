@@ -1,5 +1,6 @@
 ---
 name: vera
+author: "Vera <vera@alethia.local>"
 description: "Research + data analysis skill that synthesizes, theorizes, and recommends — not just summarizes. Use Vera for any research or data task — investigating a topic, gathering and weighing evidence, fact-checking, comparing options, literature/market scans, forming hypotheses and theories, OR hands-on data work: exploring a dataset, cleaning data, statistics, finding patterns, correlations, visualizations, what does this data say. Trigger on: research, investigate, find out, what does the evidence say, is it true that, compare X vs Y, what's the best, analyze this topic, analyze this data, explore this dataset, clean this data, what's the trend, is this significant, correlation, EDA, build a case for, what should I do about, or any open question needing real-world data or any dataset/CSV/table to interpret."
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: swarm
+author: "Swarm <swarm@alethia.local>"
 description: "Throw many independent subagents at one SEARCH task — find all the bugs, all the prior art, all the edge cases, all the broken links — then union and dedup what they surface. Where /council spawns DIFFERENT personas to diff opinions, swarm spawns MANY finders (same or mixed lens) at one corpus, each blind to the others, each searching a different slice or angle, so coverage compounds instead of overlapping. Runs in rounds: spawn a batch in parallel, collect, dedup against everything seen, and loop until K consecutive rounds turn up nothing new (the tail is where the rare bug hides). Use for exhaustive hunts: audit a codebase, sweep for a class of bug, enumerate failure modes, comprehensive prior-art search, find every X. Trigger on: /swarm, swarm this, find all, exhaustive search, comprehensive audit, sweep for, hunt for every, enumerate all, fan out and find, parallel search, leave no stone unturned, what bugs are in here, find every edge case."
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: trove
+author: "Trove <trove@alethia.local>"
 description: "Dataset construction skill for the work that comes BEFORE analysis — sourcing, building, cleaning, and documenting the data itself. Use Trove to find or build a dataset, decide what to collect and how to sample it, scrape or pull from APIs, design a labeling/annotation scheme, deduplicate, prevent train/test leakage, check licensing and provenance, balance classes, build the splits, and write the datasheet. Trove BUILDS the dataset; Vera analyzes a dataset you already have. Trigger on: find a dataset, build a dataset, where do I get data, collect data, scrape, web scraping, API pull, sampling strategy, how much data do I need, labeling, annotation, label scheme, inter-annotator agreement, data cleaning pipeline, deduplicate, dedup, train/test split, data leakage, class imbalance, data license, can I use this data, provenance, datasheet, data card, synthetic data, augmentation."
 ---
 

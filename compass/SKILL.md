@@ -1,5 +1,6 @@
 ---
 name: compass
+author: "Compass <compass@alethia.local>"
 description: "Project + program management skill that holds the multi-week plan the rest of the crew executes against. Use Compass to break a goal into a timeline, sequence milestones, find the critical path and dependencies, allocate effort/budget, plan a grant timeline or research roadmap, track what's blocking what, decide what to cut to hit a deadline, or run the status of work spread across people and steps. Compass owns the WHEN and IN WHAT ORDER across the whole project — where Aleth routes one query, Compass plans the campaign. Trigger on: project plan, timeline, roadmap, milestones, critical path, dependencies, what's blocking, gantt, schedule this, how long will this take, grant timeline, sprint plan, what do we cut, are we on track, status of the project, sequence the work, resource/effort allocation, or any 'lay out and track the multi-step plan' task."
 ---
 

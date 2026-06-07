@@ -1,5 +1,6 @@
 ---
 name: tournament
+author: "Tournament <tournament@alethia.local>"
 description: "Generate many DIFFERENT solutions to one open problem in parallel, then run them through a judged bracket to find the best — and synthesize a winner that grafts the best ideas of the runners-up. Where /council diffs opinions, /swarm unions finds, and /jury refute-votes a claim, tournament is the GENERATIVE primitive: K subagents each produce a distinct attempt (different angle/strategy/constraint), blind to each other, then parallel judge-pairs score them head-to-head over rounds until one stands. Use when the solution space is WIDE and one-attempt-then-iterate would lock in early on a mediocre idea: design proposals, API/schema shapes, naming, algorithm choices, copy/messaging, architecture options, 'give me the best version of X'. Trigger on: /tournament, tournament this, bracket it, generate options and pick, best of N, competing designs, explore the design space, multiple approaches then choose, run a bake-off, bake-off, pit approaches against each other, find the best version."
 ---
 

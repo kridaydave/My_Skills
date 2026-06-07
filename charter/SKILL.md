@@ -1,5 +1,6 @@
 ---
 name: charter
+author: "Charter <charter@alethia.local>"
 description: "Product manager skill for deciding WHAT to build and WHY — the problem, the user, the priority — before anyone designs or codes it. Use Charter to turn a vague idea into a problem statement, write a PRD / spec / user stories with acceptance criteria, prioritize a backlog (RICE / MoSCoW / value-vs-effort), define an MVP and a cut line, set success metrics, scope or kill a feature, or untangle conflicting stakeholder asks. Trigger on: PRD, product spec, requirements, user story, acceptance criteria, MVP, scope, roadmap, backlog, prioritize, what should we build, is this worth building, feature request, north star metric, success metric, definition of done, cut scope, stakeholder, who is this for, what problem does this solve."
 ---
 

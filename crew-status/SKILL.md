@@ -1,5 +1,6 @@
 ---
 name: crew-status
+author: "Crew-Status <crew-status@alethia.local>"
 description: "One-shot dashboard for the crew's memory and pending handoffs. Reads every memory/agents/*.md and memory/inbox/*.md under the project root and prints a compact status: what each persona knows, when it was last updated, and every pending cross-persona handoff waiting in an inbox. Read-only — never writes, edits, clears, or routes. Use to see the crew's whole memory and open threads at a glance. Trigger on: /crew, /crew-status, crew status, what does the crew know, what do we know so far, show crew memory, crew memory, pending handoffs, open handoffs, who knows what, crew dashboard."
 ---
 

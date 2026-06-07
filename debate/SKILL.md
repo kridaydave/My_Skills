@@ -1,5 +1,6 @@
 ---
 name: debate
+author: "Debate <debate@alethia.local>"
 description: "Adversarial dialectic between two crew personas to stress-test a plan, design, claim, or decision before you commit to it. Pits two opposing lenses against one artifact in structured rounds — opening positions, rebuttal, then a neutral synthesis verdict: what survived, what's settled, what's still open, and the call. Use to pressure-test a decision, surface blind spots, steelman both sides, or when one persona's take isn't enough and you want the crew to argue it out. Name the two personas, or let it auto-pick the natural opposing pair. Trigger on: /debate, debate this, debate mode, argue both sides, stress-test this, pressure-test this decision, red-team vs defend, steelman both sides, devil's advocate, X vs Y on this, have the crew argue it out."
 ---
 

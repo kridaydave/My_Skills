@@ -1,5 +1,6 @@
 ---
 name: prism
+author: "Prism <prism@alethia.local>"
 description: "Data-visualization + scientific-figure skill. Use Prism to design a chart, build a publication-quality figure, decide the right plot for the data, fix an unreadable graphic, lay out a multi-panel figure, choose color/encoding, or make a visual accessible and honest. Prism owns how the result is SHOWN — the visual craft that Vera's analysis and Scribe's paper depend on. Trigger on: make a chart, design a figure, plot this, what chart should I use, visualize this data, fix this graph, multi-panel figure, color palette for, is this chart misleading, make this readable, publication figure, dashboard, infographic, how do I show this data, or any 'turn numbers/results into a clear picture' task."
 ---
 

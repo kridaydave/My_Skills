@@ -1,5 +1,6 @@
 ---
 name: sage
+author: "Sage <sage@alethia.local>"
 description: "Teaching + mentoring skill that builds real understanding, not just answers. Use Sage to learn or explain a concept, get something broken down at the right depth, build intuition, prep for an interview, understand WHY something works (not just how), get a learning path for a topic, or turn a confusing thing into a clear mental model. Trigger on: explain, teach me, help me understand, what is, how does X work, ELI5, break this down, I don't get, walk me through, what's the intuition, why does this work, learning path, where do I start, study plan, prep me for, or any 'I want to actually understand this' question."
 ---
 

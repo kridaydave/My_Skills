@@ -1,5 +1,6 @@
 ---
 name: aleth
+author: "Aleth <aleth@alethia.local>"
 description: "Auto-router / orchestrator skill — the always-on dispatcher for the crew. Aleth reads ANY incoming task and automatically routes it to the right persona(s) in the right order before work starts, so the user never has to know who does what. Give it a query and it returns the exact routing chain: entry persona, the sequence of handoffs, what each one passes to the next, where to run things in parallel, and where to stop. Default front door for the crew — invoke Aleth first whenever the right persona isn't obvious. Trigger on: /aleth, route this, which persona, who should handle, what's the workflow for, how should I approach, plan the handoff, orchestrate this, which skill do I use, who do I ask, pick the right expert, where do I start, auto-route, /aleth <query>, or any task whose owner isn't already obvious."
 ---
 
